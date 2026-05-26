@@ -4,7 +4,7 @@
 
 **English** | **[中文](./README.zh-CN.md)**
 
-[![Practices](https://img.shields.io/badge/practices-9-blue)](./practices)
+[![Practices](https://img.shields.io/badge/practices-10-blue)](./practices)
 [![Templates](https://img.shields.io/badge/templates-3-green)](./templates)
 [![Protocol](https://img.shields.io/badge/protocol-v5-orange)](./cases/voiceos-harness.md)
 [![License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
@@ -133,6 +133,7 @@ Tell your AI agent to read `AGENTS.md` and start. See the [Migration Guide](./MI
 | [Role Boundary Enforcement](./practices/role-boundary-enforcement.md) | Split tasks across roles, don't blur role boundaries |
 | [Self-Evolving Protocol](./practices/self-evolving-protocol.md) | Every mistake becomes a rule — protocol improves itself |
 | [Incremental Commit](./practices/incremental-commit.md) | Commit every 1-3 parts, not at the end — safer, more traceable |
+| [Naming Conventions](./practices/naming-conventions.md) | One reference sheet for files, commits, statuses, and identifiers |
 
 ---
 
@@ -174,7 +175,7 @@ Tell your AI agent to read `AGENTS.md` and start. See the [Migration Guide](./MI
 ## What's Included
 
 ```
-├── practices/          ← 9 reusable practices (copy what you need)
+├── practices/          ← 10 reusable practices (copy what you need)
 ├── templates/          ← 3 ready-to-use templates
 │   ├── AGENTS-template.md      ← Main protocol (copy to project root)
 │   ├── spec-template.md        ← Task spec template

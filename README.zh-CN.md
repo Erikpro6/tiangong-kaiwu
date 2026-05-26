@@ -4,7 +4,7 @@
 
 **[English](./README.md)** | **中文**
 
-[![Practices](https://img.shields.io/badge/实践-9-blue)](./practices)
+[![Practices](https://img.shields.io/badge/实践-10-blue)](./practices)
 [![Templates](https://img.shields.io/badge/模板-3-green)](./templates)
 [![Protocol](https://img.shields.io/badge/协议-v5-orange)](./cases/voiceos-harness.md)
 [![License](https://img.shields.io/badge/许可证-MIT-black)](./LICENSE)
@@ -133,6 +133,7 @@ cp templates/review-template.md YOUR_PROJECT/docs/reviews/_TEMPLATE.md
 | [角色边界执行](./practices/role-boundary-enforcement.md) | 跨领域时拆分任务，不模糊角色边界 |
 | [自进化协议](./practices/self-evolving-protocol.md) | 每次错误变成一条规则——协议自己会进步 |
 | [增量提交](./practices/incremental-commit.md) | 每 1-3 个 Part 提交一次，不是全做完才提交 |
+| [命名规范](./practices/naming-conventions.md) | 文件名、提交信息、状态码、标识符的一页式速查表 |
 
 ---
 
@@ -174,7 +175,7 @@ VoiceOS 3.0 开发过程中记录了 **11 次进化**，每次都永久消除了
 ## 仓库结构
 
 ```
-├── practices/          ← 9 个可复用实践（按需选用）
+├── practices/          ← 10 个可复用实践（按需选用）
 ├── templates/          ← 3 个即用模板
 │   ├── AGENTS-template.md      ← 主协议文件（复制到项目根目录）
 │   ├── spec-template.md        ← 任务规格书模板
