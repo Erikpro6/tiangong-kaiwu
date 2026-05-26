@@ -1,4 +1,4 @@
-# AI Workflow Practices
+# 天工开物 · Tiangong Kaiwu
 
 > **Production-proven multi-agent collaboration protocol.** Born from 276 commits, 109 batches, and 5 protocol versions in a real product.
 
@@ -8,6 +8,8 @@
 [![Templates](https://img.shields.io/badge/templates-3-green)](./templates)
 [![Protocol](https://img.shields.io/badge/protocol-v5-orange)](./cases/voiceos-harness.md)
 [![License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
+
+> *In 1637, Song Yingxing wrote 《天工开物》— an encyclopedia documenting how artisans of every craft transformed raw materials into finished works through division of labor and systematic process. 389 years later, the same principle powers AI agents collaborating to ship production software.*
 
 ---
 
@@ -215,6 +217,18 @@ All practices were extracted from [VoiceOS 3.0](https://voiceos-3-web.pages.dev)
 - **Zero file conflicts** after Spec Locks were introduced
 
 Read the full case study → [VoiceOS 3.0 Harness Evolution](./cases/voiceos-harness.md)
+
+---
+
+## Why "天工开物"?
+
+**天工开物** (*Tiangong Kaiwu*), written by Song Yingxing in 1637, is China's first comprehensive encyclopedia of technology and craftsmanship. It documented how artisans across 18 industries — from metallurgy to shipbuilding to silk weaving — transformed raw materials into finished works through systematic process and division of labor.
+
+The parallel is intentional: just as Song Yingxing observed that great works emerge not from individual genius but from **clear roles, systematic process, and accumulated craft knowledge**, this project proves that AI agents produce their best work under the same conditions.
+
+天工 (*Tiangong*) literally means "heavenly craftsmanship" — work so refined it seems divinely inspired. 开物 (*Kaiwu*) means "to create things" — the act of bringing new artifacts into the world.
+
+Together: **the art of making extraordinary things through disciplined collaboration.**
 
 ---
 

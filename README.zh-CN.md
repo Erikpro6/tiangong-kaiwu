@@ -1,13 +1,15 @@
-# AI Workflow Practices 中文版
+# 天工开物 · Tiangong Kaiwu
 
 > **经过实战验证的多 AI Agent 协作协议。** 来自 276 次提交、109 个任务批次、5 个协议版本的真实产品开发。
+
+**[English](./README.md)** | **中文**
 
 [![Practices](https://img.shields.io/badge/实践-9-blue)](./practices)
 [![Templates](https://img.shields.io/badge/模板-3-green)](./templates)
 [![Protocol](https://img.shields.io/badge/协议-v5-orange)](./cases/voiceos-harness.md)
 [![License](https://img.shields.io/badge/许可证-MIT-black)](./LICENSE)
 
-**[English](./README.md)** | **中文**
+> *1637 年，宋应星著《天工开物》——一部记录百工造物的百科全书。389 年后，同一原理驱动 AI Agent 协作交付生产级软件。*
 
 ---
 
@@ -215,6 +217,18 @@ Prompt Engineering 优化单个 Agent 的输出。这优化多个 Agent 之间�
 - 引入 Spec Locks 后 **零文件冲突**
 
 完整案例研究 → [VoiceOS 3.0 Harness 演化](./cases/voiceos-harness.md)
+
+---
+
+## 为什么叫"天工开物"？
+
+**天工开物**，明代宋应星（1637 年）著，是中国第一部综合性科技百科全书。书中记录了 18 个行业——从冶金到造船到丝绸——的工匠如何通过系统化流程和分工协作，将原材料转化为精美成品。
+
+这个名字是有意为之：正如宋应星观察到伟大作品并非来自个人天才，而是来自**清晰的角色分工、系统化的流程和积累的工艺知识**，这个项目证明 AI Agent 在同样条件下也能产出最佳成果。
+
+天工，意为"巧夺天工"——精妙到仿佛天赐。开物，意为"开物成务"——将新事物创造出来。
+
+合在一起：**通过有序协作，创造非凡之物。**
 
 ---
 
