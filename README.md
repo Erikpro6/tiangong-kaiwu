@@ -2,6 +2,8 @@
 
 > **Production-proven multi-agent collaboration protocol.** Born from 276 commits, 109 batches, and 5 protocol versions in a real product.
 
+**English** | **[中文](./README.zh-CN.md)**
+
 [![Practices](https://img.shields.io/badge/practices-9-blue)](./practices)
 [![Templates](https://img.shields.io/badge/templates-3-green)](./templates)
 [![Protocol](https://img.shields.io/badge/protocol-v5-orange)](./cases/voiceos-harness.md)
