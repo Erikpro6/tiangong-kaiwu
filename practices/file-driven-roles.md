@@ -11,10 +11,11 @@
 角色之间**不对话**，只通过文件沟通：
 
 ```
-指挥者 → 执行者: docs/specs/batch-N.md（Spec 文件）
-执行者 → 审核者: git commit + progress.md 状态更新
-审核者 → 指挥者: docs/reviews/batch-N.md（审核报告）
-优化者 → 指挥者: docs/optimizations/YYYY-MM-DD-{主题}.md（优化方案）
+北斗(指挥者) → 天工(执行者): docs/specs/batch-N.md（Spec 文件）
+天工(执行者) → 巡天(审核者): git commit + progress.md 状态更新
+巡天(审核者) → 北斗(指挥者): docs/reviews/batch-N.md（审核报告）
+小诸葛(优化者) → 北斗(指挥者): docs/optimizations/YYYY-MM-DD-{主题}.md（优化方案）
+远望(运维)    → 北斗(指挥者): docs/audits/yuanwang-audit-YYYY-MM-DD.md（审计报告）
 ```
 
 每个角色读取上一个角色的产出文件，写入自己的产出文件。没有人需要"在场"等待。

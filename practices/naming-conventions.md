@@ -188,6 +188,55 @@ Version bump rules:
 - **Minor** (v4 → v5): new rules, new fields, wording changes
 - **Major**: new roles, process restructuring, architectural changes
 
+## Role System
+
+Roles are named after Chinese astronomical instruments and mythological figures — each name reflects the role's function:
+
+| Name | Meaning | Role | Responsibility |
+|------|---------|------|----------------|
+| **北斗** (Beidou) | Big Dipper — the compass in the sky | Commander | Plans direction, writes Specs, manages progress, deploys |
+| **天工** (Tiangong) | Divine Craftsman — heavenly maker | Executor | Reads Spec, codes Part by Part, builds, commits |
+| **巡天** (Xuntian) | Sky Survey — scanning the heavens | Reviewer | Audits code against Spec, writes review reports |
+| **神笔** (Shenbi) | Magic Brush — from the legend of Ma Liang | Visual Designer | CSS/styling only — never touches logic code |
+| **小诸葛** (Xiaozhuge) | Little Zhuge Liang — the legendary strategist | Process Optimizer | Finds bottlenecks, improves protocol, extracts reusable practices |
+| **远望** (Yuanwang) | Look Afar — deep observation | Ops / Audit | Type safety, build checks, production monitoring |
+
+### Naming Philosophy
+
+Just as ancient Chinese astronomers named constellations after their function (北斗 for navigation, 巡天 for surveying), each agent role is named after what it *does*:
+
+- **北斗** (Big Dipper) always points north → Commander sets direction
+- **天工** (divine craftsmanship) creates things → Executor builds
+- **巡天** (sky survey) observes and records → Reviewer inspects
+- **神笔** (magic brush) brings images to life → Designer makes it beautiful
+- **小诸葛** (strategist) sees the battlefield → Optimizer improves the process
+- **远望** (look afar) watches the horizon → Ops catches problems before they arrive
+
+### Minimum Viable Setup
+
+You don't need all 6 roles:
+
+| Team Size | Roles | Setup |
+|-----------|-------|-------|
+| Solo dev + AI | **北斗** + **天工** | 2 roles, minimum viable |
+| 2 people | 北斗 + 天工 + **巡天** | Add review gate |
+| 3+ team | Full 6-role setup | Maximum coordination |
+
+### Role Boundaries
+
+Each role reads and writes specific file types:
+
+| Role | Reads | Writes |
+|------|-------|--------|
+| 北斗 | reviews/, progress.md, optimizations/ | specs/, progress.md |
+| 天工 | specs/ | source code, progress.md (status only) |
+| 巡天 | specs/, source code | reviews/ |
+| 神笔 | specs/ (visual tasks only) | globals.css, className values |
+| 小诸葛 | progress.md, reviews/, AGENTS.md | optimizations/ |
+| 远望 | source code, build output | audits/ |
+
+When a task crosses role boundaries, split the task — don't blur the roles. See [Role Boundary Enforcement](./role-boundary-enforcement.md).
+
 ## How to Apply
 
 1. **On project setup**: Create the directory structure above and copy templates
