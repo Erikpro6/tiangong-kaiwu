@@ -4,7 +4,7 @@
 
 **English** | **[中文](./README.zh-CN.md)**
 
-[![Practices](https://img.shields.io/badge/practices-10-blue)](./practices)
+[![Practices](https://img.shields.io/badge/practices-17-blue)](./practices)
 [![Templates](https://img.shields.io/badge/templates-3-green)](./templates)
 [![Protocol](https://img.shields.io/badge/protocol-v5-orange)](./cases/voiceos-harness.md)
 [![License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
@@ -135,6 +135,28 @@ Tell your AI agent to read `AGENTS.md` and start. See the [Migration Guide](./MI
 | [Incremental Commit](./practices/incremental-commit.md) | Commit every 1-3 parts, not at the end — safer, more traceable |
 | [Naming Conventions](./practices/naming-conventions.md) | One reference sheet for files, commits, statuses, and identifiers |
 
+### Safety & Debugging
+
+| Practice | What It Solves |
+|----------|---------------|
+| [Execution Safety](./practices/execution-safety.md) | File guards, operation confirmation, and rollback checkpoints for autonomous agents |
+| [Structured Debugging](./practices/structured-debugging.md) | Hypothesis-driven root-cause analysis replaces trial-and-error |
+
+### Advanced Quality
+
+| Practice | What It Solves |
+|----------|---------------|
+| [Automated Quality Gates](./practices/automated-quality-gates.md) | Multi-layer verification (static → build → test → perf) beyond single verify_cmd |
+| [Cross-Validation](./practices/cross-validation.md) | Second AI model reviews critical changes — breaks confirmation bias |
+
+### Deployment & Ops
+
+| Practice | What It Solves |
+|----------|---------------|
+| [Deployment Verification](./practices/deployment-verification.md) | Build ≠ Deploy — four-step verification ensures code actually reaches users |
+| [Testing Strategy](./practices/testing-strategy.md) | Progressive test introduction for new code, bug fixes, and Epic-level Specs |
+| [Ops Audit Cadence](./practices/ops-audit-cadence.md) | Scheduled ops audits catch what code review misses — types, tests, security |
+
 ---
 
 ## How It Works
@@ -175,7 +197,7 @@ Tell your AI agent to read `AGENTS.md` and start. See the [Migration Guide](./MI
 ## What's Included
 
 ```
-├── practices/          ← 10 reusable practices (copy what you need)
+├── practices/          ← 17 reusable practices (copy what you need)
 ├── templates/          ← 3 ready-to-use templates
 │   ├── AGENTS-template.md      ← Main protocol (copy to project root)
 │   ├── spec-template.md        ← Task spec template
@@ -190,7 +212,7 @@ Tell your AI agent to read `AGENTS.md` and start. See the [Migration Guide](./MI
 
 ## FAQ
 
-**Do I need to use all 9 practices?**
+**Do I need to use all 17 practices?**
 No. Start with File-Driven Roles + Emoji State Machine (the foundation), then add practices as you hit problems. The [Migration Guide](./MIGRATION-GUIDE.md) has a minimal setup path.
 
 **Does this only work with Claude Code?**

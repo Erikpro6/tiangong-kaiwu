@@ -11,6 +11,24 @@
 | 状态 | 🔴 未开始 / 🟡 执行中 / 🟢 待审核 |
 | 优先级 | P0 / P1 / P2 |
 | 审核级别 | 🔴 必须审核 / 🟢 自验提交 |
+| locks | {将修改的文件列表，逗号分隔} |
+| guards | {禁止修改的文件列表，逗号分隔（可选）} |
+
+### 多级验证（可选）
+
+| 级别 | 命令 | 说明 |
+|------|------|------|
+| verify_l0 | `tsc --noEmit` | 静态类型检查 |
+| verify_l1 | `next build` | 构建验证 |
+| verify_l2 | `vitest run --related` | 相关测试（有测试文件时） |
+
+### Epic 级别额外字段（仅 Epic 使用）
+
+| 字段 | 值 |
+|------|-----|
+| rollback_plan | {回滚步骤} |
+| affected_systems | {影响的系统模块} |
+| context_plan | {超过 5 Part 时，在第 X Part 后 /compact} |
 
 ## Part 1: {标题}
 

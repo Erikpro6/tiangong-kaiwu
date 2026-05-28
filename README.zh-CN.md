@@ -4,7 +4,7 @@
 
 **[English](./README.md)** | **中文**
 
-[![Practices](https://img.shields.io/badge/实践-10-blue)](./practices)
+[![Practices](https://img.shields.io/badge/实践-17-blue)](./practices)
 [![Templates](https://img.shields.io/badge/模板-3-green)](./templates)
 [![Protocol](https://img.shields.io/badge/协议-v5-orange)](./cases/voiceos-harness.md)
 [![License](https://img.shields.io/badge/许可证-MIT-black)](./LICENSE)
@@ -135,6 +135,28 @@ cp templates/review-template.md YOUR_PROJECT/docs/reviews/_TEMPLATE.md
 | [增量提交](./practices/incremental-commit.md) | 每 1-3 个 Part 提交一次，不是全做完才提交 |
 | [命名规范](./practices/naming-conventions.md) | 文件名、提交信息、状态码、标识符的一页式速查表 |
 
+### 安全与调试
+
+| 实践 | 解决什么问题 |
+|------|-------------|
+| [执行安全护栏](./practices/execution-safety.md) | 文件保护、操作确认、回滚检查点——防止自动执行的 Agent 造成不可逆损害 |
+| [结构化调试](./practices/structured-debugging.md) | 假设驱动的根因分析，替代"试了好多方法终于好了"的盲目调试 |
+
+### 高级质量保障
+
+| 实践 | 解决什么问题 |
+|------|-------------|
+| [自动化质量门禁](./practices/automated-quality-gates.md) | 多级验证（静态检查→构建→测试→性能），不只是单个 verify_cmd |
+| [交叉验证](./practices/cross-validation.md) | 用第二个 AI 模型审查关键改动——打破确认偏差 |
+
+### 部署与运维
+
+| 实践 | 解决什么问题 |
+|------|-------------|
+| [部署验证](./practices/deployment-verification.md) | Build ≠ 部署——四步验证确保代码真正到达用户 |
+| [测试策略](./practices/testing-strategy.md) | 渐进式测试引入：新代码测试、Bug 回归测试、Epic 级别测试 |
+| [运维审计节奏](./practices/ops-audit-cadence.md) | 定期运维审计捕获代码审核遗漏的——类型、测试、安全 |
+
 ---
 
 ## 运作方式
@@ -175,7 +197,7 @@ VoiceOS 3.0 开发过程中记录了 **11 次进化**，每次都永久消除了
 ## 仓库结构
 
 ```
-├── practices/          ← 10 个可复用实践（按需选用）
+├── practices/          ← 17 个可复用实践（按需选用）
 ├── templates/          ← 3 个即用模板
 │   ├── AGENTS-template.md      ← 主协议文件（复制到项目根目录）
 │   ├── spec-template.md        ← 任务规格书模板
@@ -190,7 +212,7 @@ VoiceOS 3.0 开发过程中记录了 **11 次进化**，每次都永久消除了
 
 ## 常见问题
 
-**必须用全部 9 个实践吗？**
+**必须用全部 17 个实践吗？**
 不用。从"文件驱动角色 + Emoji 状态机"开始，遇到问题再加。[迁移指南](./MIGRATION-GUIDE.md)有最小化方案。
 
 **只能用在 Claude Code 上吗？**
